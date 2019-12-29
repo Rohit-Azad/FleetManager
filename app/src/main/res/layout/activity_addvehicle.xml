@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grey_bg"
+    android:orientation="vertical"
+    tools:context=".AddVehicleActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/backedit_main_heading"
+                android:gravity="center"
+                android:text="Add Vehicle"
+                android:textColor="#fff"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txt"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:foreground="@drawable/backedit_black"
+                android:gravity="center"
+                android:hint="Vehicle Type"
+                android:textColorHint="#fff" />
+
+            <EditText
+                android:id="@+id/edt_vehicleComp"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/spinner2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/backedit"
+                android:gravity="center|start"
+                android:hint="Vehicle Company"
+                android:paddingLeft="20dp"
+                android:textColorHint="#fff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edt_VehicleName"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/edt_vehicleComp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/backedit"
+                android:gravity="center|start"
+                android:hint="Vehicle Name"
+
+                android:paddingLeft="20dp"
+                android:textColorHint="#fff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edt_VehicleLicense"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/edt_VehicleName"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/backedit"
+                android:gravity="center|start"
+                android:hint="Vehicle License Plate"
+                android:paddingLeft="20dp"
+                android:textAllCaps="true"
+                android:textColorHint="#fff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edt_VehicleVin"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/edt_VehicleLicense"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/backedit"
+                android:gravity="center|start"
+                android:hint="Vehicle VIN Number"
+                android:paddingLeft="20dp"
+                android:textColorHint="#fff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edt_VehicleEngineNumber"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/edt_VehicleVin"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/backedit"
+                android:gravity="center|start"
+                android:hint="Vehicle Engine Number"
+                android:paddingLeft="20dp"
+                android:textColorHint="#fff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/edt_InsuranceStart"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/edt_VehicleEngineNumber"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/backedit"
+                android:editable="false"
+                android:gravity="center|start"
+                android:hint="Insurance Start Date"
+                android:paddingLeft="20dp"
+                android:textColorHint="#fff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edt_InsuranceEnd"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/edt_InsuranceStart"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/backedit"
+                android:editable="false"
+                android:gravity="center|start"
+                android:hint="Insurance End Date"
+                android:paddingLeft="20dp"
+                android:textColorHint="#fff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/register"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_InsuranceEnd"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button"
+                android:onClick="addvehicle"
+                android:text="Add Vehicle"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

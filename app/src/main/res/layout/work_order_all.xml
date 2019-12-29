@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="368dp"
+    android:background="@drawable/grey_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/backedit_main_heading"
+        android:gravity="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:background="@drawable/backedit_headings"
+            android:gravity="right"
+            android:paddingRight="10dp"
+            android:text="Work Order ID"
+            android:textColor="@android:color/background_light"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/wrkID"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="5dp"
+            android:background="@drawable/backedit"
+            android:editable="false"
+
+            android:paddingLeft="20dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:background="@drawable/backedit_headings"
+            android:gravity="right"
+            android:paddingRight="10dp"
+            android:text="Make"
+            android:textColor="@android:color/background_light"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/vmake"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="5dp"
+            android:background="@drawable/backedit"
+            android:editable="false"
+
+            android:paddingLeft="20dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:background="@drawable/backedit_headings"
+            android:gravity="right"
+            android:paddingRight="10dp"
+            android:text="Model"
+            android:textColor="@android:color/background_light"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/vmodel"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="5dp"
+            android:background="@drawable/backedit"
+            android:editable="false"
+
+            android:paddingLeft="20dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:background="@drawable/backedit_headings"
+            android:gravity="right"
+            android:paddingRight="10dp"
+            android:text="License plate"
+            android:textColor="@android:color/background_light"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/lPlate"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="5dp"
+            android:background="@drawable/backedit"
+            android:editable="false"
+
+            android:paddingLeft="20dp"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:background="@drawable/backedit_headings"
+            android:gravity="right"
+            android:paddingRight="10dp"
+            android:text="Vehicle Type"
+            android:textColor="@android:color/background_light"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/VType"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="5dp"
+            android:background="@drawable/backedit"
+
+            android:editable="false"
+            android:paddingLeft="20dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:background="@drawable/backedit_headings"
+            android:gravity="right"
+            android:paddingRight="10dp"
+            android:text="Vin Number"
+            android:textColor="@android:color/background_light"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/vinNum"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="5dp"
+            android:background="@drawable/backedit"
+
+            android:editable="false"
+            android:paddingLeft="20dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:background="@drawable/backedit_headings"
+            android:gravity="right"
+            android:paddingRight="10dp"
+            android:text="Issue"
+            android:textColor="@android:color/background_light"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/vIssue"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="5dp"
+            android:background="@drawable/backedit"
+
+            android:paddingLeft="20dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnEdit"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/button"
+        android:text="Edit"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e3ede5"
+
+        />
+
+</LinearLayout>

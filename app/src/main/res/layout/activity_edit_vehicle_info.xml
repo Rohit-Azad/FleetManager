@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grey_bg"
+    android:orientation="vertical"
+    tools:context=".EditVehicleInfoActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/backedit_main_heading"
+                android:gravity="center"
+                android:text="Edit Vehicle Info"
+                android:textColor="@android:color/background_light"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="match_parent"
+                android:layout_height="112dp"
+                app:srcCompat="@drawable/editvehicleinfo" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/backedit_headings"
+                    android:gravity="center|right"
+                    android:paddingRight="10dp"
+                    android:text="Name"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etVNameEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/backedit"
+                    android:ems="10"
+                    android:gravity="center|start"
+                    android:hint="Enter Vehicle Name"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/backedit_headings"
+                    android:gravity="center|right"
+                    android:paddingRight="10dp"
+                    android:text="Type"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/spinnerType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:foreground="@drawable/backedit"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/backedit_headings"
+                    android:gravity="center|right"
+                    android:paddingRight="10dp"
+                    android:text="Company"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etVCompEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/backedit"
+                    android:ems="10"
+                    android:gravity="center|start"
+                    android:hint="Enter Vehicle Company"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/backedit_headings"
+                    android:gravity="center|right"
+                    android:paddingRight="10dp"
+                    android:text="License Plate"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etLicenseEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/backedit"
+                    android:ems="10"
+                    android:gravity="center|start"
+                    android:hint="Enter License #"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/backedit_headings"
+                    android:gravity="center|right"
+                    android:paddingRight="10dp"
+                    android:text="Engine #"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etEngNumEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/backedit"
+                    android:ems="10"
+                    android:gravity="center|start"
+                    android:hint="Enter Engine Number"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/backedit_headings"
+                    android:gravity="center|right"
+                    android:paddingRight="10dp"
+                    android:text="Vin #"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etVinEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/backedit"
+                    android:ems="10"
+                    android:gravity="center|start"
+                    android:hint="Enter Vin Number"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@drawable/backedit_headings"
+                android:gravity="center"
+                android:text="Insurance Information"
+                android:textColor="@android:color/background_light"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/backedit_headings"
+                    android:gravity="center|right"
+                    android:text="Start"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:paddingRight="10dp" />
+
+                <EditText
+                    android:id="@+id/etStart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/backedit"
+                    android:editable="false"
+                    android:ems="10"
+                    android:gravity="center|start"
+                    android:hint="Insurance Start Date"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/backedit_headings"
+                    android:gravity="center|right"
+                    android:paddingRight="10dp"
+                    android:text="End"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etEnd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/backedit"
+                    android:editable="false"
+                    android:ems="10"
+                    android:gravity="center|start"
+                    android:hint="Insurance End Date"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:background="@drawable/button"
+                android:onClick="EditVehicleInfo"
+                android:text="Apply Changes" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

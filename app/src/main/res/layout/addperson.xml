@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grey_bg"
+    tools:context=".AddPersonActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/grey_bg"
+        android:orientation="vertical">
+
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/backedit_main_heading"
+                        android:gravity="center"
+                        android:text="Add Emergency Contacts\n(Max. 3)"
+                        android:textColor="#fff"
+                        android:textSize="26sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text_home"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:textAlignment="center"
+                        android:textColor="#fff"
+                        android:textSize="20sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/rectangle"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/backedit_main_heading"
+                                android:padding="3dp"
+                                android:text="PERSON :1"
+                                android:textColor="#fff"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:background="@drawable/backedit_headings"
+                                android:gravity="right"
+                                android:paddingRight="10dp"
+                                android:text="NAME : "
+                                android:textColor="#fff"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/name"
+                                android:layout_width="200dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:background="@drawable/backedit"
+                                android:hint="Enter full name"
+                                android:inputType="text"
+                                android:paddingLeft="20dp"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textColorHint="@color/common_google_signin_btn_text_light_pressed"
+                                android:textSize="20sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:background="@drawable/backedit_headings"
+                                android:gravity="right"
+                                android:paddingRight="10dp"
+                                android:text="CONTACT :"
+                                android:textColor="#fff"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/contact"
+                                android:layout_width="200dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:background="@drawable/backedit"
+                                android:hint="Enter contact here"
+                                android:inputType="phone"
+                                android:paddingLeft="20dp"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textColorHint="@color/common_google_signin_btn_text_light_pressed"
+                                android:textSize="20sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/rectangle"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/backedit_main_heading"
+                                android:padding="3dp"
+                                android:text="PERSON :2"
+                                android:textColor="#fff"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:background="@drawable/backedit_headings"
+                                android:gravity="right"
+                                android:paddingRight="10dp"
+                                android:text="NAME : "
+                                android:textColor="#fff"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/name2"
+                                android:layout_width="200dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:background="@drawable/backedit"
+                                android:hint="Enter full name"
+                                android:inputType="text"
+                                android:paddingLeft="20dp"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textColorHint="@color/common_google_signin_btn_text_light_pressed"
+                                android:textSize="20sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:background="@drawable/backedit_headings"
+                                android:gravity="right"
+                                android:paddingRight="10dp"
+                                android:text="CONTACT :"
+                                android:textColor="#fff"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/contact2"
+                                android:layout_width="200dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:background="@drawable/backedit"
+                                android:hint="Enter contact here"
+                                android:inputType="phone"
+                                android:paddingLeft="20dp"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textColorHint="@color/common_google_signin_btn_text_light_pressed"
+                                android:textSize="20sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/rectangle"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/backedit_main_heading"
+                                android:text="PERSON :3"
+                                android:textColor="#fff"
+                                android:textSize="20dp"
+                                android:textStyle="bold"
+                                android:padding="3dp" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:background="@drawable/backedit_headings"
+                                android:gravity="right"
+                                android:paddingRight="10dp"
+                                android:text="NAME : "
+                                android:textColor="#fff"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/name3"
+                                android:layout_width="200dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:background="@drawable/backedit"
+                                android:hint="Enter full name"
+                                android:inputType="text"
+                                android:paddingLeft="20dp"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textColorHint="@color/common_google_signin_btn_text_light_pressed"
+                                android:textSize="20sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:background="@drawable/backedit_headings"
+                                android:gravity="right"
+                                android:paddingRight="10dp"
+                                android:text="CONTACT :"
+                                android:textColor="#fff"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/contact3"
+                                android:layout_width="200dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:background="@drawable/backedit"
+                                android:hint="Enter contact here"
+                                android:inputType="phone"
+                                android:paddingLeft="20dp"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textColorHint="@color/common_google_signin_btn_text_light_pressed"
+                                android:textSize="20sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/button"
+                    android:clickable="true"
+                    android:onClick="save_persons"
+                    android:text="SUBMIT"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

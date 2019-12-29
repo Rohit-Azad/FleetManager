@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grey_bg"
+    android:orientation="vertical"
+    tools:context=".EditWorkOrderAdminActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/backedit_main_heading"
+                android:gravity="center"
+                android:text="Edit Work Order"
+                android:textColor="@android:color/background_light"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="match_parent"
+                android:layout_height="112dp"
+                app:srcCompat="@drawable/workorderedit" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/backedit_headings"
+                android:gravity="center"
+                android:text="Read-Only Details"
+                android:textColor="@android:color/background_light"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/backedit_headings"
+                    android:gravity="center|right"
+                    android:paddingRight="10dp"
+                    android:text="Work Order ID"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etWorkOrderID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/backedit"
+                    android:editable="false"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|start"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/backedit_headings"
+                    android:gravity="center|right"
+                    android:paddingRight="10dp"
+                    android:text="Driver ID"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etDriverID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/backedit"
+                    android:ems="10"
+                    android:gravity="center|start"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/backedit_headings"
+                    android:gravity="center|right"
+                    android:paddingRight="10dp"
+                    android:text="LicensePlate"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etLicensePlate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/backedit"
+                    android:ems="10"
+                    android:gravity="center|start"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/backedit_headings"
+                android:gravity="center"
+                android:text="Edit Details"
+                android:textColor="@android:color/background_light"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/backedit_headings"
+                    android:gravity="center|right"
+                    android:paddingRight="10dp"
+                    android:text="Issue"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etIssue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/backedit"
+                    android:ems="10"
+                    android:gravity="center|start"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/backedit_headings"
+                    android:gravity="center|right"
+                    android:paddingRight="10dp"
+                    android:text="Status"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/spinnerStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:entries="@array/array_status_admin"
+                    android:foreground="@drawable/backedit"
+                    android:gravity="center|start"
+                    android:paddingLeft="20dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/backedit_headings"
+                    android:gravity="center|right"
+                    android:paddingRight="10dp"
+                    android:text="Date"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/backedit"
+                    android:editable="false"
+                    android:ems="10"
+                    android:gravity="center|start"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:background="@drawable/button"
+                android:onClick="update_work_order"
+                android:text="Apply Changes" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.fleetmanager">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:usesCleartextTraffic="true"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_custom_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_custom_icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".AdminViewSOSLogsActivity"></activity>
+        <activity
+            android:name=".ViewWorkordersMechanicActivity"
+            android:label="View WorkOrders" />
+        <activity
+            android:name=".LogViewResultsActivity"
+            android:label="Log View Result" />
+        <activity
+            android:name=".ViewLogsActivity"
+            android:label="View Logs" />
+        <activity
+            android:name=".DeleteGenericActivity"
+            android:label="Delete" />
+        <activity
+            android:name=".ForgotPasswordAdminActivity"
+            android:label="Reset Password" />
+        <activity
+            android:name=".SOSActivity"
+            android:label="SOS ALERT" />
+        <activity
+            android:name=".EditOrderedPartsActivity"
+            android:label="Edit Parts Ordered" />
+        <activity
+            android:name=".ViewOrderedPartsAdminActivity"
+            android:label="View Ordered Parts" />
+        <activity
+            android:name=".AdminDeleteActivity"
+            android:label="Delete / Remove" />
+        <activity
+            android:name=".AdminViewEditInventoryActivity"
+            android:label="View / Edit" />
+        <activity
+            android:name=".AdminMenuMainPageActivity"
+            android:label="Main Menu" />
+        <activity
+            android:name=".EditMechanicInfoActivity"
+            android:label="Edit Info" />
+        <activity
+            android:name=".ViewMechanicsActivity"
+            android:label="View All Mechanics" />
+        <activity
+            android:name=".EditWorkOrderAdminActivity"
+            android:label="Edit a Work Order" />
+        <activity
+            android:name=".ViewAllWorkOrdersAdminActivity"
+            android:label="View All Work Orders" />
+        <activity
+            android:name=".ViewClosedWorkOrderAdminActivity"
+            android:label="View Closed Work Orders" />
+        <activity
+            android:name=".ViewOpenWorkOrderAdminActivity"
+            android:label="View Open Work Orders" />
+        <activity
+            android:name=".DrvrWorkViewTwo"
+            android:label="Work Orders" />
+        <activity
+            android:name=".DrvrWorkViewOne"
+            android:label="Search" />
+        <activity
+            android:name=".UpdateMechanicProfileActivity"
+            android:label="Update Mechanic Profile" />
+        <activity
+            android:name=".UpdateDriverProfileActivity"
+            android:label="Update Driver Profile" />
+        <activity
+            android:name=".OrderPartsActivity"
+            android:label="Parts Ordered" />
+        <activity
+            android:name=".CloseWorkOrderActivity"
+            android:label="Close a Work Order" />
+        <activity
+            android:name=".MechanicLogActivity"
+            android:label="Fill Work Details" />
+        <activity
+            android:name=".DriverLogActivity"
+            android:label="File e-Log" />
+        <activity
+            android:name=".ViewNotificationsActivity"
+            android:label="View Notifications" />
+        <activity
+            android:name=".EditVehicleInfoActivity"
+            android:label="Edit Vehicle Info" />
+        <activity
+            android:name=".EditDriverInfoActivity"
+            android:label="Edit Driver Info" />
+        <activity
+            android:name=".MechanicLoginActivity"
+            android:label="Mechanic Login" />
+        <activity
+            android:name=".MechanicMenuActivity"
+            android:label="Mechanic Menu" />
+        <activity
+            android:name=".MainMenuActivity"
+            android:label="Fleet Manager Main Menu">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".CreateWorkOrderActivity"
+            android:label="Create Work Order" />
+        <activity
+            android:name=".ViewVehicleActivity"
+            android:label="View Vehicles" />
+        <activity
+            android:name=".DriverMenuActivity"
+            android:label="Driver Menu" />
+        <activity
+            android:name=".DriverLoginActivity"
+            android:label="Driver Login" />
+        <activity
+            android:name=".ViewDriverActivity"
+            android:label="View Drivers" />
+        <activity
+            android:name=".AddVehicleActivity"
+            android:label="Add New Vehicle" />
+        <activity
+            android:name=".AdminSignupActivity"
+            android:label="Administrator Signup" />
+        <activity
+            android:name=".AdminLoginActivity"
+            android:label="Admin Login" />
+        <activity
+            android:name=".AddDriverActivity"
+            android:label="Add New Driver" />
+        <activity
+            android:name=".AdminAddInventoryActivity"
+            android:label="Admin Menu" />
+        <activity
+            android:name=".AddMechanicActivity"
+            android:label="Add Mechanic" />
+        <activity
+            android:name=".UpdateAdminProfileActivity"
+            android:label="Update Profile" />
+        <activity android:name=".ViewOpenWorkOrderMechanicActivity" />
+        <activity android:name=".MapsActivity" />
+        <activity android:name=".AddPersonActivity" />
+        <activity android:name=".AlertDialogActivity" />
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <receiver android:name=".SmsListener">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

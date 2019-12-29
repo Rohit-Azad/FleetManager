@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Fleet Manager</string>
+
+    <string-array name="array_status">
+        <item>Select</item>
+
+        <item>Closed</item>
+
+        <item>in Progress</item>
+
+    </string-array>
+
+    <string-array name="array_status_admin">
+        <item>Open</item>
+
+        <item>Closed</item>
+
+        <item>in Progress</item>
+
+    </string-array>
+    <string-array name="arrayTruck">
+        <item>Straight Truck</item>
+
+        <item>Semi Truck</item>
+
+        <item>Tanker Truck</item>
+
+        <item>Flatbed Truck</item>
+
+    </string-array>
+
+
+    <string name="latitude">Latitude:</string>
+    <string name="longitude">Longitude:</string>
+    <string name="timestamp">Timestamp:</string>
+    <string name="address">Address:</string>
+    <string name="get_location">Get Location</string>
+    <string name="location_permission_denied">Application can\'t access get location</string>
+    <string name="no_location">This application can\'t access the get location</string>
+    <string name="service_not_available">Service not available</string>
+    <string name="no_address_found">No address found</string>
+</resources>

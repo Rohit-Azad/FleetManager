@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/driverlogin"
+    android:orientation="vertical"
+    tools:context=".DriverLoginActivity">
+
+    <EditText
+        android:id="@+id/edt_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="240dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/backedit"
+        android:gravity="center|start"
+        android:hint="USER ID"
+        android:paddingLeft="20dp"
+        android:text="gsingh"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_pass"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/backedit"
+        android:gravity="center|start"
+        android:hint="PASSWORD"
+        android:inputType="textPassword"
+        android:paddingLeft="20dp"
+        android:text="123456"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/forgetpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:clickable="true"
+        android:gravity="right"
+        android:text="FORGET PASSWORD?"
+        android:textColor="#fff"
+        android:textSize="15dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_cancel"
+            android:onClick="Cancel"
+            android:text="Cancel" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/button"
+            android:onClick="DrLogin"
+            android:text="SIGN IN"
+
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

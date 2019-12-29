@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grey_bg"
+    android:orientation="vertical"
+    tools:context=".OrderPartsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/backedit_main_heading"
+                android:gravity="center"
+                android:text="Order Parts"
+                android:textColor="@android:color/background_light"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="105dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/spareparts" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/backedit_headings"
+                    android:gravity="center|right"
+                    android:paddingRight="10dp"
+                    android:text="Vehicle ID"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etVid"
+                    android:layout_width="220dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/backedit"
+                    android:ems="10"
+                    android:gravity="center|start"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="20sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/backedit_headings"
+                    android:gravity="center|right"
+                    android:paddingRight="10dp"
+                    android:text="License Plate"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etPartsLPlate"
+                    android:layout_width="220dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/backedit"
+                    android:editable="false"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|start"
+                    android:inputType="textPersonName"
+                    android:maxLength="7"
+                    android:paddingLeft="20sp"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/backedit_headings"
+                    android:gravity="center|right"
+                    android:paddingRight="10dp"
+                    android:text="Vin Number"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etPartsVinNumber"
+                    android:layout_width="220dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/backedit"
+                    android:editable="false"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|start"
+                    android:inputType="textPersonName"
+                    android:maxLength="10"
+                    android:paddingLeft="20sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/backedit_headings"
+                    android:gravity="center|right"
+                    android:paddingRight="10dp"
+                    android:text="Vehicle"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etVehicle"
+                    android:layout_width="220dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/backedit"
+                    android:editable="false"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|start"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="20sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/backedit_headings"
+                    android:gravity="center"
+                    android:text="Parts Ordered"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etPartsOrdered"
+                    android:layout_width="match_parent"
+                    android:layout_height="66dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/backedit"
+                    android:ems="10"
+                    android:gravity="center|start"
+                    android:maxLines="3"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/backedit_headings"
+                    android:gravity="center|right"
+                    android:paddingRight="10dp"
+                    android:text="Company"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/etCompany"
+                    android:layout_width="220dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/backedit"
+                    android:gravity="center|start"
+                    android:paddingLeft="20sp"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/backedit_headings"
+                    android:gravity="center|right"
+                    android:paddingRight="10dp"
+                    android:text="Invoice"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etPartsInvoice"
+                    android:layout_width="220dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/backedit"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center|start"
+                    android:inputType="textPersonName"
+                    android:maxLength="13"
+                    android:paddingLeft="20sp"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/backedit_headings"
+                    android:gravity="center|right"
+                    android:paddingRight="10dp"
+                    android:text="Total"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etPartsTotal"
+                    android:layout_width="220dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/backedit"
+                    android:ems="10"
+                    android:gravity="center|start"
+                    android:inputType="number"
+                    android:paddingLeft="20sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/backedit_headings"
+                    android:gravity="center|right"
+                    android:paddingRight="10dp"
+                    android:text="Date"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etPartsDate"
+                    android:layout_width="220dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/backedit"
+                    android:editable="false"
+                    android:ems="10"
+                    android:enabled="true"
+                    android:gravity="center|start"
+                    android:inputType="none"
+                    android:paddingLeft="20sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/btnPartsCancel"
+                    android:layout_width="153dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_cancel"
+                    android:onClick="cancel"
+                    android:text="Cancel" />
+
+                <Button
+                    android:id="@+id/btnPartsSubmit"
+                    android:layout_width="153dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button"
+                    android:onClick="submit_data"
+                    android:text="Submit" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

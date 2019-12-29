@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grey_bg"
+    android:orientation="vertical"
+    tools:context=".AdminAddInventoryActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/backedit_main_heading"
+                android:gravity="center"
+                android:text="Add Inventory / Personnel"
+                android:textColor="@android:color/background_light"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/rectangle"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="add_driver"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/driverlogo" />
+
+                <TextView
+                    android:id="@+id/update_driver"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/backedit"
+                    android:paddingLeft="20dp"
+                    android:text="Driver"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/rectangle"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="add_vehicle"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/trucklogo" />
+
+                <TextView
+                    android:id="@+id/add_vehicle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/backedit"
+                    android:paddingLeft="20dp"
+                    android:text="Vehicle"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/rectangle"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="add_mechanic"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/mechaniclogo" />
+
+                <TextView
+                    android:id="@+id/add_mechanic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/backedit"
+                    android:paddingLeft="20dp"
+                    android:text="Mechanic"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="go_back"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/back" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/backedit"
+                    android:paddingLeft="20dp"
+                    android:text="Go Back"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

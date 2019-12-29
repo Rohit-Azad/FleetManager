@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/adminlogin"
+    android:orientation="vertical"
+    tools:context=".AdminLoginActivity">
+
+    <EditText
+        android:id="@+id/edt_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="240dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/backedit"
+        android:gravity="center|start"
+        android:hint="USER ID"
+        android:paddingLeft="20dp"
+        android:text="rohit3049"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_pass"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/backedit"
+        android:gravity="center|start"
+        android:hint="PASSWORD"
+        android:inputType="textPassword"
+        android:paddingLeft="20dp"
+        android:text="12345"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/forgetpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:clickable="true"
+        android:gravity="right"
+        android:onClick="forgot_pass"
+        android:text="FORGET PASSWORD?"
+        android:textColor="#fff"
+        android:textSize="15dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_cancel"
+            android:onClick="Cancel"
+            android:text="Cancel" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/button"
+            android:onClick="adminLogin"
+            android:text="SIGN IN"
+
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:gravity="center"
+        android:text="NO ACCOUNT YET?"
+        android:textColor="#fff"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:background="@drawable/button"
+        android:onClick="admin_register"
+        android:text="SIGN UP" />
+
+
+</LinearLayout>

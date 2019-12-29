@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grey_bg"
+    android:orientation="vertical"
+    tools:context=".EditOrderedPartsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/backedit_main_heading"
+                android:gravity="center"
+                android:text="Edit Ordered Parts"
+                android:textColor="@android:color/background_light"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="match_parent"
+                android:layout_height="112dp"
+                app:srcCompat="@drawable/order" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/backedit_headings"
+                android:gravity="center"
+                android:text="Read-Only Details"
+                android:textColor="@android:color/background_light"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/backedit_headings"
+                    android:gravity="center|right"
+                    android:paddingRight="10dp"
+                    android:text="Order ID"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etOrderID"
+                    android:layout_width="230dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/backedit"
+                    android:editable="false"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/backedit_headings"
+                    android:gravity="center|right"
+                    android:paddingRight="10dp"
+                    android:text="Mechanic ID"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etMID"
+                    android:layout_width="230dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/backedit"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/backedit_headings"
+                    android:gravity="center|right"
+                    android:paddingRight="10dp"
+                    android:text="Vehicle ID"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etVID"
+                    android:layout_width="230dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/backedit"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/backedit_headings"
+                android:gravity="center"
+                android:text="Edit Details"
+                android:textColor="@android:color/background_light"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/backedit_headings"
+                    android:gravity="center"
+                    android:text="Parts Ordered"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etPartsOrdered"
+                    android:layout_width="match_parent"
+                    android:layout_height="96dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/backedit"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:maxLines="3"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/backedit_headings"
+                    android:gravity="center|right"
+                    android:paddingRight="10dp"
+                    android:text="Company"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etCompany"
+                    android:layout_width="230dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/backedit"
+                    android:editable="false"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/backedit_headings"
+                    android:gravity="center|right"
+                    android:paddingRight="10dp"
+                    android:text="Date"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etDate"
+                    android:layout_width="230dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/backedit"
+                    android:editable="false"
+                    android:ems="10"
+                    android:inputType="none"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/backedit_headings"
+                    android:gravity="center|right"
+                    android:paddingRight="10dp"
+                    android:text="Total"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etTotal"
+                    android:layout_width="230dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/backedit"
+                    android:editable="false"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:background="@drawable/button"
+                android:onClick="update_order"
+                android:text="Apply Changes" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

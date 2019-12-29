@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grey_bg"
+    android:orientation="vertical"
+    tools:context=".EditMechanicInfoActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/backedit_main_heading"
+                android:gravity="center"
+                android:text="Edit Mechanic Info"
+                android:textColor="@android:color/background_light"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="match_parent"
+                android:layout_height="129dp"
+                app:srcCompat="@drawable/mechedit" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/backedit_headings"
+                    android:gravity="center|right"
+                    android:paddingRight="10sp"
+                    android:text="Name"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etName"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/backedit"
+                    android:ems="10"
+                    android:gravity="center|start"
+                    android:hint="Enter Name"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/backedit_headings"
+                    android:gravity="center|right"
+                    android:paddingRight="10sp"
+                    android:text="Username"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/backedit"
+                    android:ems="10"
+                    android:gravity="center|start"
+                    android:hint="Enter Username"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/backedit_headings"
+                    android:gravity="center|right"
+                    android:paddingRight="10sp"
+                    android:text="Password"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/backedit"
+                    android:ems="10"
+                    android:gravity="center|start"
+                    android:hint="Enter Password"
+                    android:inputType="textPassword"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/backedit_headings"
+                    android:gravity="center"
+                    android:text="Security Question"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etSecurityQues"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/backedit"
+                    android:ems="10"
+                    android:gravity="center|start"
+                    android:hint="Security Question"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/backedit_headings"
+                    android:gravity="center"
+                    android:text="Security Answer"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etSecurityAns"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/backedit"
+                    android:ems="10"
+                    android:gravity="center|start"
+                    android:hint="Security Answer"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/backedit_headings"
+                    android:gravity="center|right"
+                    android:paddingRight="10sp"
+                    android:text="Mobile"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/backedit"
+                    android:ems="10"
+                    android:gravity="center|start"
+                    android:hint="Enter Mobile"
+                    android:inputType="textPersonName"
+                    android:maxLength="10"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/backedit_headings"
+                    android:gravity="center|right"
+                    android:paddingRight="10sp"
+                    android:text="E-Mail"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/backedit"
+                    android:ems="10"
+                    android:gravity="center|start"
+                    android:hint="Enter Email"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnApply"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:background="@drawable/button"
+                android:onClick="EditMechanicInfo"
+                android:text="Apply Changes" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
