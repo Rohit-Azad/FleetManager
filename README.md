@@ -1,6 +1,8 @@
 # FleetManager
 Final project - Applied Research project
 
+!!!!!!!!!!!Added a short demo as well as video of SOS feature!!!!!!!!!!!!
+
 Requirements and steps to run application
 
 Required - Desktop or Laptop, Android phone, Wamp , android studio
